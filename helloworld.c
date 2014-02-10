@@ -4,6 +4,6 @@
 
 main()
 {
-    printf("Hello World");
+    printf("Hello World"); /* Prints Hello World */
 
 }
