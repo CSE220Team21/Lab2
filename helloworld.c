@@ -1,5 +1,5 @@
 /* Hello World program */
-//Team 21: Ashley Krueger, Mike Mayr, Charles Crow
+//Team 21: Ashley Krueger, Charles Crow, Mike Mayr
 #include<stdio.h>
 
 main()
