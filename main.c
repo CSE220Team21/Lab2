@@ -6,7 +6,9 @@ int main (int argc, const char *argv[])
     char source_name[MAX_FILE_NAME_LENGTH];
     char date[DATE_STRING_LENGTH];
     
-   /* Missing Code Here */
+    source_file=init_lister(*argv,source_name,date) //Calls the init lister function and sets a value to the pointer source_file
+    
+   /* Missing code here */
     return 0;
 }
 FILE *init_lister(const char *name, char source_file_name[], char dte[])
