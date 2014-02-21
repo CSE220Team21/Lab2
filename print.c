@@ -16,7 +16,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     {
         save_chp=(line+MAX_PRINT_LINE_LENGTH);
         save_ch=*save_chp;
-        *save_chp="\0";
+        *save_chp='\0';
     }
     if (save_chp)
     {
