@@ -29,8 +29,8 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
     if (source_buffer[0]) //This is the condition for the if statement
     {
 	strcpy(print_buffer,source_buffer);//copies the string in source buffer over to print buffer
-	line_number++;//increments the line number
 	print_line(print_buffer,src_name,todays_date); //calls the print line function
+	line_number++;//increments the line number
         return (TRUE);
     }
     else
