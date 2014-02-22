@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (Lab2)
+set(CMAKE_BUILT_TYPE Debug)
+set(CMAKE_C_FLAGS "-g3")
+add_executable(main main.c print.c)
