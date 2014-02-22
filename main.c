@@ -49,15 +49,6 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     strcat(dte, strmin);
     strcat(dte, '\0');
     
-    int i=0;
-    
-    while(*name != '\0'){
-    	source_file_name[i]=*name;
-    	name++;
-    	i++;
-    }
-    source_file_name[i]='\0';
-    
     file=fopen(source_file_name, "r");
     
     return file;
