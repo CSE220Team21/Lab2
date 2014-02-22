@@ -23,6 +23,12 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     
     strcpy(source_file_name,name);
     
+    int i;
+    
+    for(i=0, i<sizeof(dte), i++){
+    	dte[i]=NULL;
+    }
+    
     //stores all of the components of the date header in strings
     char date[5];
     char stryr[5];
@@ -47,7 +53,7 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     strcat(dte, strhr);
     strcat(dte, ":");
     strcat(dte, strmin);
-    strcat(dte, '\0');
+    strcat(dte, "\0");
     
     file=fopen(source_file_name, "r");
     
