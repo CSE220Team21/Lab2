@@ -19,13 +19,15 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     FILE *file;
     
     time(&timer);
-    clk=localtime(&timer);
+    clk=localtime(&timer);//instantiates clk to local time
     
     strcpy(source_file_name,name);
     
     int i;
     
-    for(i=0, i<sizeof(dte), i++){
+    
+    //for loop clears out the array since strcat is used later
+    for(i=0; i<sizeof(dte); i++){
     	dte[i]=NULL;
     }
     
