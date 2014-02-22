@@ -46,12 +46,8 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     strcat(dte, strhr);
     strcat(dte, ":");
     strcat(dte, strmin);
+    strcat(dte, '\0');
     
-    
-    file=fopen(name);
-    if(file){
-    //SOMETHING???	
-    }
     return file;
 }
 BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
