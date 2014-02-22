@@ -1,3 +1,5 @@
+/* CSE 220 Lab 2 Team 21: Ashley Krueger, Mike Mayr, Charlie Crow */
+
 #include "common.h"
 
 int main (int argc, const char *argv[])
