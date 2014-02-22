@@ -51,7 +51,7 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     
     int i=0;
     
-    while(*name != null){
+    while(*name != '\0'){
     	source_file_name[i]=*name;
     	name++;
     	i++;
