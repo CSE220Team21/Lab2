@@ -1,3 +1,5 @@
+/* CSE 220 Lab 2 Team 21: Ashley Krueger, Mike Mayr, Charlie Crowe */
+
 #include "common.h"
 
 static void print_page_header(char source_name[], char date[]);
@@ -15,14 +17,14 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     }
     if (strlen(line) > MAX_PRINT_LINE_LENGTH) 
     {
-        save_chp=(line+MAX_PRINT_LINE_LENGTH);
-        save_ch=*save_chp;
-        *save_chp='\0';
+        save_chp=(line+MAX_PRINT_LINE_LENGTH);//sets save chp to the line plus the length
+        save_ch=*save_chp;//sets save ch to the pointer
+        *save_chp='\0';//dereferences the pointer and sets it equal to the null character
     }
     if (save_chp)  
     {
-        printf("%s: ", line);
-        *save_chp=save_ch;
+        printf("%s: ", line);//prints the line number
+        *save_chp=save_ch;//sets the pointer back
     }
    
     if (save_chp)
