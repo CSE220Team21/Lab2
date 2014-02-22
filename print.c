@@ -19,15 +19,15 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
         save_ch=*save_chp;
         *save_chp='\0';
     }
-    if (save_chp)
+    if (save_chp != null)  //ensures save_chp has value
     {
         printf("%d", line);
         *save_chp=save_ch;
     }
-    /* Missing Code Here */
-    if (save_chp)
+   
+    if (save_chp == null)
     {
-        /* Missing Code Here */
+       line_count++;  //increments count
     }
 }
 static void print_page_header(char source_name[], char date[])
