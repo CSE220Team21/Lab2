@@ -15,7 +15,7 @@ int main (int argc, const char *argv[])
 FILE *init_lister(const char *name, char source_file_name[], char dte[])
 {
     time_t timer;
-    struct tm *clk;
+    struct tm *clk;//creates a pointer called clk of type struct tm
     FILE *file;
     
     clk=localtime(&timer);
@@ -36,7 +36,17 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     sprintf(strhr, "%d", (clk->tm_hour));
     sprintf(strmin, "%d", (clk->tm_min));
     
-    dte
+    //concatinates the strings into the character array dte
+    strcat(dte, strmon);
+    strcat(dte, "/");
+    strcat(dte, date);
+    strcat(dte, "/");
+    strcat(dte, stryr);
+    strcat(dte, " ");
+    strcat(dte, strhr);
+    strcat(dte, ":");
+    strcat(dte, strmin);
+    
     
     file=fopen(name);
     if(file){
