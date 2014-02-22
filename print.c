@@ -23,7 +23,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     }
     if (save_chp)  
     {
-        printf("%s: ", line);//prints the line number
+        printf("%s", line);//prints the line of source code
         *save_chp=save_ch;//sets the pointer back
     }
    
