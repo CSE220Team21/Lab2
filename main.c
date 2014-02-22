@@ -56,6 +56,8 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
     char source_buffer[MAX_SOURCE_LINE_LENGTH];
     static int line_number = 0;
     
+    fgets(source_buffer, MAX_SOURCE_LINE_LENGTH, src_file);
+    
     if (source_buffer[0]) //This is the condition for the if statement
     {
 	strcpy(print_buffer,source_buffer);//copies the string in source buffer over to print buffer
