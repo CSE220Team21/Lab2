@@ -19,13 +19,13 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
         save_ch=*save_chp;
         *save_chp='\0';
     }
-    if (save_chp != null)  //ensures save_chp has value
+    if (save_chp)  
     {
-        printf("%d: ", line);
+        printf("%s: ", line);
         *save_chp=save_ch;
     }
    
-    if (save_chp == null)
+    if (save_chp)
     {
        line_count++;  //increments line_count
     }
