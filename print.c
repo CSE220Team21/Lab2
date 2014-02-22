@@ -21,7 +21,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
     }
     if (save_chp)
     {
-        printf("%s", line);
+        printf("%d", line);
         *save_chp=save_ch;
     }
     /* Missing Code Here */
