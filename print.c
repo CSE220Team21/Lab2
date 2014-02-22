@@ -27,7 +27,7 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
    
     if (save_chp == null)
     {
-       line_count++;  //increments count
+       line_count++;  //increments line_count
     }
 }
 static void print_page_header(char source_name[], char date[])
