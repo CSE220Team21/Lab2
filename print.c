@@ -34,5 +34,6 @@ static void print_page_header(char source_name[], char date[])
 {
     static int page_number = 0;
     
-    /* Missing Code Here */
+    page_number++;//increments page number
+    printf("%s\nPage: %d %s\n", source_name, page_number, date);//calls printf and prints out the header with the file name, page number, and the date
 }
