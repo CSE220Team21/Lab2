@@ -18,6 +18,7 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     struct tm *clk;//creates a pointer called clk of type struct tm
     FILE *file;
     
+    time(&timer)
     clk=localtime(&timer);
     
     strcpy(source_file_name,name);
