@@ -1,4 +1,4 @@
-/* CSE 220 Lab 2 Team 21: Ashley Krueger, Mike Mayr, Charlie Crow */
+/* CSE 220 Lab 2 Team 21: Ashley Krueger, Mike Mayr, Charlie Crowe */
 
 #include "common.h"
 
@@ -23,22 +23,21 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     time(&timer);
     clk=localtime(&timer);//instantiates clk to local time
     
-    strcpy(source_file_name,name);
+    strcpy(source_file_name,name);//copies over the pointer name to the char source file name
     
     int i;
     
-    
     //for loop clears out the array since strcat is used later
     for(i=0; i<sizeof(dte); i++){
-    	dte[i]=NULL;
+    	dte[i]=NULL;//sets every location to null
     }
     
     //stores all of the components of the date header in strings
-    char date[5];
-    char stryr[5];
-    char strmon[3];
-    char strhr[3];
-    char strmin[3];
+    char date[5];//date number
+    char stryr[5];// year number since 1900
+    char strmon[3];//month starting with 0
+    char strhr[3];//hour in a string
+    char strmin[3];//minutes in a string
     
     //prints every component of the date header
     sprintf(stryr, "%d", (clk->tm_year + 1900));
@@ -59,9 +58,9 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[])
     strcat(dte, strmin);
     strcat(dte, "\0");
     
-    file=fopen(source_file_name, "r");
+    file=fopen(source_file_name, "r");//opens the file
     
-    return file;
+    return file;//returns the file;
 }
 BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[])
 {
