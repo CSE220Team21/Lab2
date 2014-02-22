@@ -6,7 +6,7 @@ int main (int argc, const char *argv[])
     char source_name[MAX_FILE_NAME_LENGTH];
     char date[DATE_STRING_LENGTH];
     
-    source_file=init_lister(*argv,source_name,date) //Calls the init lister function and sets a value to the pointer source_file
+    source_file=init_lister(*argv,source_name,date); //Calls the init lister function and sets a value to the pointer source_file
     
    while(get_source_line(source_file,source_name,date)){
    }//Calls the Boolean function until it is false
